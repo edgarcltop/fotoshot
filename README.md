@@ -15,25 +15,6 @@ Scalable, high performance knowledge graph memory system with semantic retrieval
       - `entityType` (string): Type classification
       - `observations` (string[]): Associated observations
 
-- **add_observations**
-
-  - Add new observations to existing entities
-  - Input: `observations` (array of objects)
-    - Each object contains:
-      - `entityName` (string): Target entity
-      - `contents` (string[]): New observations to add
-
-- **delete_entities**
-
-  - Remove entities and their relations
-  - Input: `entityNames` (string[])
-
-- **delete_observations**
-  - Remove specific observations from entities
-  - Input: `deletions` (array of objects)
-    - Each object contains:
-      - `entityName` (string): Target entity
-      - `observations` (string[]): Observations to remove
 
 ### Relation Management
 
@@ -49,10 +30,3 @@ Scalable, high performance knowledge graph memory system with semantic retrieval
       - `confidence` (number, optional): Confidence level (0.0-1.0)
       - `metadata` (object, optional): Custom metadata fields
 
-- **get_relation**
-
-  - Get a specific relation with its enhanced properties
-  - Input:
-    - `from` (string): Source entity name
-    - `to` (string): Target entity name
-    - `relationType` (string): Relationship type
